@@ -49,6 +49,7 @@ body
 {
     display: none;
     position: absolute;
+    text-align: center;
     background-color: #f9f9f9;
     min-width: 160px;
     overflow: auto;
