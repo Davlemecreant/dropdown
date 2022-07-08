@@ -6,7 +6,7 @@
 
 body
 {
-    background: #3f4450;
+    background: #40485a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body
 .menubtn
 {
     position: relative;
-    background-color: #3f4450;
+    background-color: #40485a;
     color: white;
     min-width: 160px;
     padding: 15px 40px;
