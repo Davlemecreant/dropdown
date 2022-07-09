@@ -1,21 +1,22 @@
-    // menu déroulant
+// menu déroulant
+let variable = document.querySelectorAll('button')
+let menu = document.querySelectorAll('.dropdown-content')
+let liens = document.querySelectorAll('a')
 
-    document.getElementById("btn").onclick = function(){myFunction()};
+for (let i = 0; i < liens.length; i++) {
+    variable[i].addEventListener('click', function () {
+        menu[i].classList.toggle('show')
+        liens.forEach((lien) => {
+            lien.addEventListener('click', function () {
+                menu[i].classList.remove('show')
 
-    function myFunction(){
-        document.getElementById("menu").classList.toggle("show");
-    }
+            })
+        })
+    })
+}
 
-    window.onclick = function(event) {
-        if (!event.target.matches('.menubtn')) {
-      
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
+
+
+
+
+

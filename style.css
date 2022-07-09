@@ -10,10 +10,18 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
 }
 
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    
+}
 
+/* bouton 1 */
 .menubtn
 {
     position: relative;
@@ -21,6 +29,7 @@ body
     color: white;
     min-width: 160px;
     padding: 15px 40px;
+    margin-left: 20px;
     font-size: 16px;
     outline:  1px solid white;
     cursor: pointer;
@@ -51,7 +60,9 @@ body
     position: absolute;
     background-color: #f9f9f9;
     text-align: center;
+    margin-left: 20px;
     min-width: 160px;
+    outline:  1px solid white;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
@@ -71,8 +82,110 @@ body
     opacity: 0.3;
     
 }
-  
+
 .show 
 {
     display:block;
 }
+
+/* bouton 2 */
+
+.menubtn2
+{
+    position: relative;
+    background-color: #40485a;
+    color: white;
+    min-width: 160px;
+    padding: 15px 40px;
+    margin-left: 20px;
+    font-size: 16px;
+    outline:  1px solid white;
+    cursor: pointer;
+    overflow:hidden;
+    display: inline-block;
+}
+  
+.menubtn2:before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    background : white;
+    right: -55px;
+    bottom: -40px;
+    transform: rotate(37deg);
+    transition: all .3s;
+    opacity: 0.3;
+  }
+  
+  .menubtn2:hover:before {
+    right:95%;
+  }
+
+  /* bouton 3 */
+
+  .menubtn3
+{
+    position: relative;
+    background-color: #40485a;
+    color: white;
+    min-width: 160px;
+    padding: 15px 40px;
+    margin-left: 20px;
+    font-size: 16px;
+    outline:  1px solid white;
+    cursor: pointer;
+    overflow:hidden;
+    display: inline-block;
+}
+  
+.menubtn3:before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  background : #fff;
+  left: 0;
+  top: 0;
+  transition: all .3s;
+  opacity: 0.3;
+}
+
+.menubtn3:hover:before {
+  top: 72%;
+}
+
+/* bouton 4 */
+
+.menubtn4
+{
+    position: relative;
+    background-color: #40485a;
+    color: white;
+    min-width: 160px;
+    padding: 15px 40px;
+    margin-left: 20px;
+    font-size: 16px;
+    outline:  1px solid white;
+    cursor: pointer;
+    overflow:hidden;
+    display: inline-block;
+}
+  
+.menubtn4:before {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 100%;
+  background : #fff;
+  left: 0;
+  bottom: 0;
+  transition: all .3s;
+  opacity: 0.3;
+}
+
+.menubtn4:hover:before {
+  bottom: 72%;
+}
+
+  
