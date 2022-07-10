@@ -188,10 +188,4 @@ body
   bottom: 72%;
 }
 
-@media only screen and (max-width: 600px) and (min-width: 400px)
-  {
-    .container
-    {
-      flex_direction: column;
-    }
-  }  
+
