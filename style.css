@@ -188,4 +188,10 @@ body
   bottom: 72%;
 }
 
-  
+@media (max-width: 600px)
+  {
+    .container
+    {
+      flex_direction: column;
+    }
+  }  
