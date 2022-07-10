@@ -190,11 +190,6 @@ body
 
 @media only screen and (max-width: 500px)
 {
-     body 
-   {
-    margin: auto;
-    min-height: auto;   
-   }
     
     .container
     {
