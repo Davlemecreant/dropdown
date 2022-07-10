@@ -188,4 +188,17 @@ body
   bottom: 72%;
 }
 
-
+@media only screen and (max-width: 500px)
+{
+     body 
+   {
+    margin: auto;
+    min-height: auto;   
+   }
+    
+    .container
+    {
+        
+        flex-direction: column;
+        padding: 40px;
+    }
